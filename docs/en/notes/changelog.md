@@ -1,5 +1,45 @@
 # Changelog (MMPreTrain)
 
+## v1.1.0(12/10/2023)
+
+### New Features
+
+- [Feature] Implement of Zero-Shot CLIP Classifier ([#1737](https://github.com/open-mmlab/mmpretrain/pull/1737))
+- [Feature] Add minigpt4 gradio demo and training script. ([#1758](https://github.com/open-mmlab/mmpretrain/pull/1758))
+
+### Improvements
+
+- [Config] New Version of config Adapting MobileNet Algorithm ([#1774](https://github.com/open-mmlab/mmpretrain/pull/1774))
+- [Config] Support DINO self-supervised learning in project ([#1756](https://github.com/open-mmlab/mmpretrain/pull/1756))
+- [Config] New Version of config Adapting Swin Transformer Algorithm ([#1780](https://github.com/open-mmlab/mmpretrain/pull/1780))
+- [Enhance] Add iTPN Supports for Non-three channel image ([#1735](https://github.com/open-mmlab/mmpretrain/pull/1735))
+- [Docs] Update dataset download script from opendatalab to openXlab ([#1765](https://github.com/open-mmlab/mmpretrain/pull/1765))
+- [Docs] Update COCO-Retrieval dataset docs. ([#1806](https://github.com/open-mmlab/mmpretrain/pull/1806))
+
+### Bug Fix
+
+- Update `train.py` to compat with new config.
+- Update OFA module to compat with the latest huggingface.
+- Fix pipeline bug in ImageRetrievalInferencer.
+
+## v1.0.2(15/08/2023)
+
+### New Features
+
+- Add MFF ([#1725](https://github.com/open-mmlab/mmpretrain/pull/1725))
+- Support training of BLIP2 ([#1700](https://github.com/open-mmlab/mmpretrain/pull/1700))
+
+### Improvements
+
+- New Version of config Adapting MAE Algorithm ([#1750](https://github.com/open-mmlab/mmpretrain/pull/1750))
+- New Version of config Adapting ConvNeXt Algorithm ([#1760](https://github.com/open-mmlab/mmpretrain/pull/1760))
+- New version of config adapting BeitV2 Algorithm ([#1755](https://github.com/open-mmlab/mmpretrain/pull/1755))
+- Update `dataset_prepare.md` ([#1732](https://github.com/open-mmlab/mmpretrain/pull/1732))
+- New Version of `config` Adapting Vision Transformer Algorithm ([#1727](https://github.com/open-mmlab/mmpretrain/pull/1727))
+- Support Infographic VQA dataset and ANLS metric. ([#1667](https://github.com/open-mmlab/mmpretrain/pull/1667))
+- Support IconQA dataset. ([#1670](https://github.com/open-mmlab/mmpretrain/pull/1670))
+- Fix typo MIMHIVIT to MAEHiViT ([#1749](https://github.com/open-mmlab/mmpretrain/pull/1749))
+
 ## v1.0.1(28/07/2023)
 
 ### Improvements

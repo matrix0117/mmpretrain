@@ -84,9 +84,10 @@ https://github.com/open-mmlab/mmpretrain/assets/26739999/e4dcd3a2-f895-4d1b-a351
 
 ## 更新日志
 
-🌟 2023/7/28 发布了 v1.0.1 版本
+🌟 2023/10/12 发布了 v1.1.0 版本
 
-修复部分 bug 和增强算法库功能。细节请参考 [更新日志](https://mmpretrain.readthedocs.io/zh_CN/latest/notes/changelog.html)。
+- 支持 Mini-GPT4 训练并提供一个基于 Baichuan-7B 的中文模型
+- 支持基于 CLIP 的零样本分类。
 
 🌟 2023/7/4 发布了 v1.0.0 版本
 
@@ -95,15 +96,9 @@ https://github.com/open-mmlab/mmpretrain/assets/26739999/e4dcd3a2-f895-4d1b-a351
 - 添加自监督学习算法 [**iTPN**](./configs/itpn/), [**SparK**](./configs/spark/)。
 - 提供[新配置文件](./mmpretrain/configs/)和 [DeepSpeed/FSDP](./configs/mae/benchmarks/) 的样例。这是[新配置文件](https://mmengine.readthedocs.io/en/latest/advanced_tutorials/config.html#a-pure-python-style-configuration-file-beta) 和 [DeepSpeed/FSDP with FlexibleRunner](https://mmengine.readthedocs.io/en/latest/api/generated/mmengine.runner.FlexibleRunner.html#mmengine.runner.FlexibleRunner) 的文档链接。
 
-🌟 2023/5/22 发布了 v1.0.0rc8 版本
+🌟 从 MMClassification 升级到 MMPreTrain
 
-- 支持多种多模态算法和推理器。您可以通过 [gradio demo](https://github.com/open-mmlab/mmpretrain/tree/main/projects/gradio_demo) 探索这些功能!
-- 新增 EVA-02，Dino-V2，ViT-SAM 和 GLIP 主干网络。
-- 将 torchvision 变换注册到 MMPretrain，现在您可以轻松地将 torchvision 的数据增强集成到 MMPretrain 中。
-
-之前版本更新内容
-
-- 整和来自 MMSelfSup 的自监督学习算法，例如 `MAE`, `BEiT` 等
+- 整合来自 MMSelfSup 的自监督学习算法，例如 `MAE`, `BEiT` 等
 - 支持了 **RIFormer**，简单但有效的视觉主干网络，却移除了 token mixer
 - 重构数据管道可视化
 - 支持了 **LeViT**, **XCiT**, **ViG**, **ConvNeXt-V2**, **EVA**, **RevViT**, **EfficientnetV2**, **CLIP**, **TinyViT** 和 **MixMIM** 等骨干网络结构
@@ -249,6 +244,7 @@ mim install -e ".[multimodal]"
         <li><a href="configs/mixmim">MixMIM (arXiv'2022)</a></li>
         <li><a href="configs/itpn">iTPN (CVPR'2023)</a></li>
         <li><a href="configs/spark">SparK (ICLR'2023)</a></li>
+        <li><a href="configs/mff">MFF (ICCV'2023)</a></li>
         </ul>
       </td>
       <td>
@@ -334,10 +330,10 @@ MMPreTrain 是一款由不同学校和公司共同贡献的开源项目。我们
 
 ## 欢迎加入 OpenMMLab 社区
 
-扫描下方的二维码可关注 OpenMMLab 团队的 [知乎官方账号](https://www.zhihu.com/people/openmmlab)，加入 OpenMMLab 团队的 [官方交流 QQ 群](https://jq.qq.com/?_wv=1027&k=aCvMxdr3) 或联络 OpenMMLab 官方微信小助手
+扫描下方的二维码可关注 OpenMMLab 团队的 [知乎官方账号](https://www.zhihu.com/people/openmmlab)，扫描下方微信二维码添加喵喵好友，进入 MMPretrain 微信交流社群。【加好友申请格式：研究方向+地区+学校/公司+姓名】
 
 <div align="center">
-<img src="./resources/zhihu_qrcode.jpg" height="400"/> <img src="./resources/xiaozhushou_weixin_qrcode.jpeg" height="400"/>
+<img src="./resources/zhihu_qrcode.jpg" height="400"/> <img src="./resources/miaomiao_qrcode.jpg" height="400"/>
 </div>
 
 我们会在 OpenMMLab 社区为大家
