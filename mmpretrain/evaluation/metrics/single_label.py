@@ -726,7 +726,7 @@ class ConfusionMatrix(BaseMetric):
         """  # noqa: E501
         import matplotlib.pyplot as plt
 
-        fig, ax = plt.subplots(figsize=(10, 10))
+        fig, ax = plt.subplots(figsize=(50, 50))
 
         num_classes = confusion_matrix.size(0)
 
@@ -769,7 +769,7 @@ class ConfusionMatrix(BaseMetric):
 
         ax.set_ylim((num_classes - 0.5, -0.5))
         # Automatically rotate the x labels.
-        fig.autofmt_xdate(ha='center')
+        fig.autofmt_xdate(ha='center',rotation=90)
 
         if show:
             plt.show()

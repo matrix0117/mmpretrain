@@ -59,6 +59,8 @@ from .vit_eva02 import ViTEVA02
 from .vit_sam import ViTSAM
 from .xcit import XCiT
 
+from projects.my_project.transfg.models import TransFG
+
 __all__ = [
     'LeNet5',
     'AlexNet',
@@ -126,4 +128,5 @@ __all__ = [
     'HiViT',
     'SparseResNet',
     'SparseConvNeXt',
+    'TransFG', # transfg backbone
 ]

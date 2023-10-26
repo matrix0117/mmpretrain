@@ -119,6 +119,7 @@ venv.bak/
 
 # custom
 /data
+/dataset
 .vscode
 .idea
 *.pkl

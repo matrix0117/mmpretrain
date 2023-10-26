@@ -32,6 +32,10 @@ from .vig_head import VigClsHead
 from .vision_transformer_head import VisionTransformerClsHead
 from .vqa_head import VQAGenerationHead
 
+from projects.my_project.transfg.head import TransFGClsHead
+
+
+
 __all__ = [
     'ClsHead',
     'LinearClsHead',
@@ -66,4 +70,5 @@ __all__ = [
     'GroundingHead',
     'iTPNClipHead',
     'SparKPretrainHead',
+    'TransFGClsHead' # transfg head
 ]

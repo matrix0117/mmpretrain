@@ -40,10 +40,10 @@ def scaled_dot_product_attention_pyimpl(query,
     if attn_mask is not None and attn_mask.dtype == torch.bool:
         attn_mask = attn_mask.masked_fill(not attn_mask, -float('inf'))
 
-    attn_weight = query @ key.transpose(-2, -1) / scale
+    attn_weight = query @ key.transpose(-2, -1) / scale # attention_score
     if attn_mask is not None:
         attn_weight += attn_mask
-    attn_weight = torch.softmax(attn_weight, dim=-1)
+    attn_weight = torch.softmax(attn_weight, dim=-1) # weight
     attn_weight = torch.dropout(attn_weight, dropout_p, True)
     return attn_weight @ value
 

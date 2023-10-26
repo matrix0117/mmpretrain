@@ -246,6 +246,9 @@ class ImageClassifier(BaseClassifier):
                 method of :attr:`head`.
         """
         feats = self.extract_feat(inputs)
+        # # transfg 修改
+        # return self.head.predict(feats[0], data_samples, **kwargs)
+        # # transfg 修改
         return self.head.predict(feats, data_samples, **kwargs)
 
     def get_layer_depth(self, param_name: str):
